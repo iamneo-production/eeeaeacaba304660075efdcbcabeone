@@ -49,7 +49,6 @@ const ticTacToe = (element, index) => {
 const resetGame = () => {
     // Your code to reset the game state
     // ...
-
     // Your code to update the 'result' element
     // ...
 
