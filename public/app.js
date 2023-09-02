@@ -37,6 +37,13 @@ const ticTacToe = (element, index) => {
     // ...
 };
 
+
+const disableAllButtons = () => {
+    btns.forEach((btn) => {
+        btn.disabled = true;
+    });
+};
+
     /*
     **Part 2: Reset Function (Add your code here)**
 
@@ -50,9 +57,9 @@ const ticTacToe = (element, index) => {
 const resetGame = () => {
     currentPlayer = 'X';
     gameBoard = ['', '', '', '', '', '', '', '', ''];
-    cells.forEach((cell) => {
-        cell.textContent = '';
-        cell.style.pointerEvents = 'auto';
+    btns.forEach((btn) => {
+        btn.textContent = '';
+        btn.style.pointerEvents = 'auto';
     });
     resultDisplay.textContent = 'Player ${currentPlayer} Turn';
     resetButton.style.display = 'none';
