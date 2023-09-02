@@ -19,7 +19,7 @@ let conditions = [
 const ticTacToe = (element, index) => {
     if (cells[index] === '' && !checkWin()) {
         cells[index] = currentPlayer;
-        element.textContent = currentPlayer;
+        element.value = currentPlayer;
         element.disabled = true;
 
         if (checkWin()) {
@@ -63,8 +63,8 @@ const disableAllButtons = () => {
 const resetGame = () => {
     currentPlayer = 'X';
     cells = ['', '', '', '', '', '', '', '', ''];
-    btns.forEach((btn) => {
-        btn.textContent = '';
+    btns.forEach((btn,i) => {
+        btn.value = '';
         btn.disabled = false;
     });
     result.textContent = `Player ${currentPlayer}'s Turn`;

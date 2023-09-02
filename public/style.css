@@ -9,3 +9,65 @@ body {
     font-family: "Radio Canada", sans-serif;
   }
   
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 35px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #000;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 75px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.result-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #000;
+    margin: 20px auto;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.result {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#reset {
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 15px;
+    font-size: 18px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#reset:hover {
+    background-color: #000;
+    color: #fff;
+}
+You can save this CSS code in a file named styles.css and include it in your HTML file using the <link> tag as shown in your HTML structure. This CSS will apply the styles you described in your initial conditions to your Tic Tac Toe game.
+
+
+
+
+
