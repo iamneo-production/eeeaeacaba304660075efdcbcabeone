@@ -48,13 +48,14 @@ const ticTacToe = (element, index) => {
 
 // Function to reset the game
 const resetGame = () => {
-    // Your code to reset the game state
-    // ...
-    // Your code to update the 'result' element
-    // ...
-
-    // Your code to re-enable buttons
-    // ...
+    currentPlayer = 'X';
+    gameBoard = ['', '', '', '', '', '', '', '', ''];
+    cells.forEach((cell) => {
+        cell.textContent = '';
+        cell.style.pointerEvents = 'auto';
+    });
+    resultDisplay.textContent = 'Player ${currentPlayer} Turn';
+    resetButton.style.display = 'none';
 };
 
 btns.forEach((btn, i) => {
